@@ -48,6 +48,8 @@
 
 
 
+
+
 .footer-container {
     position: relative;
         
@@ -93,7 +95,7 @@
 }
 
 .footer-socials a img {
-    width: 20px;
+    width: px;
     height: 20px;
     filter: brightness(0.7);
 }
@@ -113,4 +115,28 @@
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
     margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    .footer-v2 {
+        background: url("../assets/Image.png") no-repeat center center;
+        background-size: cover;
+        padding: 40px 0 50px;
+    }
+
+   .footer-socials {
+        max-width: 300px; 
+        margin-left: auto;
+        margin-right: auto;
+        gap: 20px 40px; 
+    }
+
+    .footer-logo {
+        font-size: 2.5rem;
+    }
+    .footer-bg-waves { background-size: cover; }
+
 }
