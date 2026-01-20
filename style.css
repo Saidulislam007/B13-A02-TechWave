@@ -31,3 +31,86 @@
 @keyframes float {
     50% { transform: translateY(-6px); }
 }
+
+.footer-v2 {
+    background-color: #1A0B2E;
+    text-align: center;
+    background: url("assets/footer-bg.png") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 80px 0 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-top: 2px solid transparent;
+    
+}
+
+
+
+.footer-container {
+    position: relative;
+        
+}
+
+.footer-logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.footer-logo span {
+    background: linear-gradient(90deg,#9100F8,#F7E93F,#FB09B4, #9100F8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: waveScan 2s linear infinite;
+}
+
+@keyframes waveScan {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-socials a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-socials a img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0.7);
+}
+
+.footer-socials a:hover {
+    color: #FFFFFF;
+}
+
+.copyright {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-line {
+    width: 200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+}
