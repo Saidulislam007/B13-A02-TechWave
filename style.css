@@ -1,0 +1,33 @@
+.footer-logo span {
+    background: linear-gradient(90deg,#9100F8,#F7E93F,#FB09B4, #9100F8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: waveScan 2s linear infinite;
+}
+
+@keyframes waveScan {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.mic-layer {
+
+    animation: breathing 4s ease-in-out infinite;
+    
+}
+
+@keyframes breathing {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.badge-new {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    50% { transform: translateY(-6px); }
+}
